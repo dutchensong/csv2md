@@ -10,7 +10,7 @@ target_file = open("target/"+source_name+".md","w")
 length = len(source_file.readlines())
 
 
-
+# sometimes the csv file use \r between lines but not \n
 if length==1:
 	source_file.seek(0)
 	item_lines = source_file.readline().split('\r')
